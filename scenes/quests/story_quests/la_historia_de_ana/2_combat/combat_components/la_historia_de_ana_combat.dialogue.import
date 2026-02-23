@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://daw20hpiotfjm"
+path="res://.godot/imported/la_historia_de_ana_combat.dialogue-b4d5e7ac66bc9d2bd5ac1c3991caa420.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/la_historia_de_ana/2_combat/combat_components/la_historia_de_ana_combat.dialogue"
+dest_files=["res://.godot/imported/la_historia_de_ana_combat.dialogue-b4d5e7ac66bc9d2bd5ac1c3991caa420.tres"]
+
+[params]
+
+defaults=true

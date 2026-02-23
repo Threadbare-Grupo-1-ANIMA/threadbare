@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://csjbpojsiyacc"
+path="res://.godot/imported/la_historia_de_ana_sequence_puzzle.dialogue-f24ebdba81b28481904c4298b8923cc3.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/la_historia_de_ana/3_sequence_puzzle/la_historia_de_ana_sequence_puzzle.dialogue"
+dest_files=["res://.godot/imported/la_historia_de_ana_sequence_puzzle.dialogue-f24ebdba81b28481904c4298b8923cc3.tres"]
+
+[params]
+
+defaults=true
