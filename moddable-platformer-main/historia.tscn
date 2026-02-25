@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dpmb4kgfrsc27"]
+
+[ext_resource type="Texture2D" uid="uid://wfwbcdcy30a2" path="res://assets/descargados/dialogo/InicioAna.jpeg" id="1_frv7s"]
+[ext_resource type="Texture2D" uid="uid://4uuyl6s4b0v8" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/PNG/Blue/Default/button_rectangle_border.png" id="2_y27lj"]
+[ext_resource type="FontFile" uid="uid://t12fe6oc1cmj" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/Font/Minecraft.ttf" id="3_y27lj"]
+[ext_resource type="Texture2D" uid="uid://bd1ckd5apsgod" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/PNG/Blue/Default/arrow_decorative_e.png" id="4_42b1e"]
+[ext_resource type="Texture2D" uid="uid://b45kyh6eewsbc" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/PNG/Blue/Default/arrow_decorative_e_small.png" id="5_0rc1j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5hsqd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_42b1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0rc1j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=851117251]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1684099294]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_frv7s")
+
+[node name="ButtonRectangleBorder" type="Sprite2D" parent="." unique_id=853028001]
+position = Vector2(961, 128)
+scale = Vector2(5.4322934, 3.1249998)
+texture = ExtResource("2_y27lj")
+
+[node name="Label" type="Label" parent="." unique_id=1995476561]
+offset_left = 493.0
+offset_top = 47.0
+offset_right = 1398.0
+offset_bottom = 206.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_y27lj")
+theme_override_font_sizes/font_size = 24
+text = "En un día soleado, Ana llegó al hospital junto a sus padres.
+El edificio era enorme y tenía dos grandes columnas en la entrada.
+A Ana le parecieron los guardianes de un reino secreto.
+
+Aunque intentaba mostrarse valiente, sentía un pequeño nudo en el estómago."
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=614727450]
+position = Vector2(1805, 976)
+scale = Vector2(2.9375017, 2.9687507)
+sprite_frames = SubResource("SpriteFrames_5hsqd")
+autoplay = "default"
+
+[node name="TextureButton" type="TextureButton" parent="AnimatedSprite2D" unique_id=1277045109]
+anchors_preset = -1
+anchor_left = 0.476
+anchor_top = 0.5
+anchor_right = 0.476
+anchor_bottom = 0.5
+offset_left = -35.997948
+offset_top = -36.21052
+offset_right = 4.002054
+offset_bottom = 3.7894783

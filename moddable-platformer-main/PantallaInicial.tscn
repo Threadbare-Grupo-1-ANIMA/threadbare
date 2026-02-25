@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://cj2n54ngtojsu"]
+
+[ext_resource type="Script" uid="uid://c06h71mfivp3m" path="res://pantalla_inicial.gd" id="1_6fj2f"]
+[ext_resource type="Texture2D" uid="uid://diy8u0lp7wp12" path="res://assets/descargados/dialogo/dialogo.jpg" id="1_r06fc"]
+[ext_resource type="Texture2D" uid="uid://csyd55g22ug51" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/PNG/Blue/Default/button_rectangle_depth_flat.png" id="2_r0kvq"]
+[ext_resource type="Texture2D" uid="uid://ctug8cywxxiev" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/PNG/Blue/Default/button_rectangle_depth_gloss.png" id="3_gb72e"]
+[ext_resource type="Texture2D" uid="uid://qjepu3srid7e" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/PNG/Blue/Default/button_rectangle_depth_gradient.png" id="4_02r0f"]
+[ext_resource type="FontFile" uid="uid://bd65nae8cnx5a" path="res://assets/descargados/dialogo/UI/kenney_ui-pack/Font/Kenney Future Narrow.ttf" id="5_r0kvq"]
+[ext_resource type="Script" uid="uid://cjtekxgsivkgm" path="res://boton_jugar.gd" id="6_02r0f"]
+[ext_resource type="Script" uid="uid://c5mut2dtk0ewk" path="res://boton_salir.gd" id="7_6fj2f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6fj2f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_r0kvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gb72e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_02r0f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1963606533]
+script = ExtResource("1_6fj2f")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=481101821]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_r06fc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=90446283]
+position = Vector2(972, 676)
+scale = Vector2(1.7864579, 1.7968752)
+sprite_frames = SubResource("SpriteFrames_6fj2f")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="AnimatedSprite2D" unique_id=113682183]
+offset_left = -46.0
+offset_top = -14.0
+offset_right = 54.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("5_r0kvq")
+theme_override_font_sizes/font_size = 25
+text = "Jugar"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=171569374]
+position = Vector2(972.00006, 808)
+scale = Vector2(1.7864579, 1.7968752)
+sprite_frames = SubResource("SpriteFrames_6fj2f")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="AnimatedSprite2D2" unique_id=892016869]
+offset_left = -46.0
+offset_top = -14.0
+offset_right = 54.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("5_r0kvq")
+theme_override_font_sizes/font_size = 25
+text = "Salir"
+
+[node name="Titulo" type="Label" parent="." unique_id=294208311]
+offset_left = 553.0
+offset_top = 295.0
+offset_right = 1393.0
+offset_bottom = 367.0
+theme_override_fonts/font = ExtResource("5_r0kvq")
+theme_override_font_sizes/font_size = 64
+text = "La Aventura de Ana"
+
+[node name="Titulo2" type="Label" parent="." unique_id=2069687776]
+visible = false
+offset_left = 553.0
+offset_top = 295.0
+offset_right = 1393.0
+offset_bottom = 367.0
+theme_override_fonts/font = ExtResource("5_r0kvq")
+theme_override_font_sizes/font_size = 64
+text = "La Aventura de AnaSHE"
+
+[node name="Boton Jugar" type="TextureButton" parent="." unique_id=392453237]
+offset_left = 801.0
+offset_top = 619.0
+offset_right = 1142.0
+offset_bottom = 732.0
+script = ExtResource("6_02r0f")
+
+[node name="Boton Salir" type="TextureButton" parent="." unique_id=667078380]
+offset_left = 801.0
+offset_top = 752.0
+offset_right = 1142.0
+offset_bottom = 865.0
+script = ExtResource("7_6fj2f")
+
+[node name="Boton titulo" type="TextureButton" parent="." unique_id=1317698445]
+offset_left = 541.0
+offset_top = 291.0
+offset_right = 1383.0
+offset_bottom = 365.0
+script = ExtResource("6_02r0f")
+
+[connection signal="pressed" from="Boton Jugar" to="Boton Jugar" method="_on_pressed"]
+[connection signal="pressed" from="Boton Salir" to="Boton Salir" method="_on_pressed"]
+[connection signal="pressed" from="Boton titulo" to="." method="_on_boton_titulo_pressed"]
