@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dhen4q6mud7r7"]
 
 [ext_resource type="TileSet" uid="uid://g4s2smr5dvt7" path="res://scenes/quests/story_quests/la_historia_de_ana/tiles/la_historia_de_ana_exterior_floors.tres" id="1_iu20f"]
-[ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://assets/first_party/templates/intro/NO_EDIT_intro_image.png" id="2_rirrf"]
+[ext_resource type="Texture2D" uid="uid://enoyxudborvp" path="res://assets/first_party/templates/player/hospitalAna.jpeg" id="2_iu20f"]
 [ext_resource type="SpriteFrames" uid="uid://b31pjqqo8kghs" path="res://scenes/quests/story_quests/la_historia_de_ana/player_components/la_historia_de_ana_player.tres" id="3_c0tp8"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_vbb8g"]
 [ext_resource type="Resource" uid="uid://bqi3j2en7fvh3" path="res://scenes/quests/story_quests/la_historia_de_ana/0_intro/intro_components/la_historia_de_ana_intro.dialogue" id="5_vbwlx"]
@@ -107,9 +107,9 @@ tile_set = ExtResource("1_iu20f")
 metadata/_edit_lock_ = true
 
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers" unique_id=1406016146]
-position = Vector2(770, 227)
-scale = Vector2(0.802083, 0.802083)
-texture = ExtResource("2_rirrf")
+position = Vector2(771, 231)
+scale = Vector2(0.171875, 0.2771739)
+texture = ExtResource("2_iu20f")
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers" unique_id=874671513]
 tile_map_data = PackedByteArray("AAAKAAEABgAAAAAAAAAKAAIABgADAAEAAAAKAAMABgADAAEAAAAKAAQABgADAAEAAAANAAEABgACAAAAAAANAAIABgADAAEAAAANAAMABgADAAEAAAANAAQABgADAAEAAAAKAAUABgAAAAIAAAALAAEABgABAAMAAAALAAUABgABAAMAAAAMAAEABgABAAMAAAAMAAUABgABAAMAAAANAAUABgACAAIAAAAAAAcAAQAGAAMAAAABAAcAAQAGAAMAAAACAAcAAQAGAAMAAAADAAcAAQAGAAMAAAAEAAcAAQAGAAMAAAAFAAcAAQAGAAMAAAAGAAcAAQAGAAMAAAAHAAcAAQAGAAMAAAAIAAcAAQAGAAMAAAAJAAcAAQAGAAMAAAAKAAcAAQAGAAMAAAALAAcAAQAGAAMAAAAMAAcAAQAGAAMAAAANAAcAAQAGAAMAAAAOAAcAAQAGAAMAAAD//wcAAQAGAAMAAAD+/wcAAQAGAAMAAAD9/wcAAQAGAAMAAAD8/wcAAQAGAAMAAAD7/wcAAQAGAAMAAAD6/wcAAQAGAAMAAAD5/wcAAQAGAAMAAAD4/wcAAQAFAAMAAAAPAAcAAQAGAAMAAAAQAAcAAQAGAAMAAAARAAcAAQAGAAMAAAASAAcAAQAGAAMAAAATAAcAAQAGAAMAAAAUAAcAAQAGAAMAAAAVAAcAAQAGAAMAAAAWAAcAAQAHAAMAAAA=")

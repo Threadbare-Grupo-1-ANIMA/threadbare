@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c8fyakvgmbluh"]
+
+[ext_resource type="Texture2D" uid="uid://bb3e0cfiq728h" path="res://assets/first_party/collectibles/descargados/SimpleCharacter/Girl-Sheet.png" id="1_arr77"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0sod"]
+size = Vector2(12, 19)
+
+[node name="Node2D" type="Node2D" unique_id=177118226]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1939516139]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2032771422]
+texture = ExtResource("1_arr77")
+hframes = 44
+frame = 1
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1108307942]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=712264089]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_r0sod")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D" unique_id=620715257]
