@@ -74,6 +74,7 @@ size_flags_vertical = 4
 script = ExtResource("3_m61hw")
 path = NodePath("Path2D")
 width_curve = SubResource("Curve_7hvf5")
+color = Color(0.9453742, 0.7580494, 0.99999994, 1)
 audio = NodePath("../../AudioStreamPlayer")
 
 [node name="Path2D" type="Path2D" parent="AspectRatioContainer/LogoStitcher" unique_id=1026553834]
